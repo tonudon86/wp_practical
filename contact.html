@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Customer Feedback Form</title>
+<script>
+function validate() {
+
+         if( document.myForm.firstname.value == "" ) {
+            alert( "Please provide your First name!" );
+            document.myForm.firstname.focus() ;
+            return false;
+         }
+
+if( document.myForm.Mobile.value == "" ) {
+            alert( "Please provide your Mobile No.!" );
+            document.myForm.Mobile.focus() ;
+            return false;
+         }
+
+
+         if( document.myForm.Email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.Email.focus() ;
+            return false;
+         }
+
+ if( document.myForm.Address.value == "" ) {
+            alert( "Please provide your Message!" );
+            document.myForm.address.focus() ;
+            return false;
+         }
+
+  return( true );
+      }
+</script>
+
+
+
+</head>
+<body bgcolor="lightgreen">
+	
+	<form name="myForm"  action="contact.php" method="post"onsubmit="return(validate());">
+<h1 align="center">Contact Us</h1>
+<table align="center" cellspacing="25" style="font-family: verdana; font-size: 15px; font-style: normal; font-weight: bold;  border-style: dotted;";>
+<tr>
+<td>Name :</td>
+<td><input type="text" name="firstname" maxlength="50" ></td>
+</tr>
+
+<tr>
+<td>Mobile No: </td>
+<td><input type="text" name="Mobile" size="30" maxlength="10"></td>
+</tr>
+<tr>
+<td>Email id: </td>
+<td><input type="Email" name="Email" ></td>
+</tr>
+<tr>
+	<td>Message:</td><br><br><br>
+	
+	</td><br>
+
+<td><input type="text" name="msg" ></td>
+
+</tr>
+<tr>
+	<td colspan="2" align="center"><button type="submit">Submit</button>
+		
+	
+</table>
+<h2 style="text-align: center;">OR</h2>
+<h3 style="text-align: center;">Contact Us on 88888 22222</h3>
+</form>
+</body>
+<script>
+   
+</script>
+</html>

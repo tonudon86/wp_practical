@@ -1,0 +1,135 @@
+
+Feedback.form
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('feedimage.jpg');
+}
+</style>
+	<meta charset="utf-8">
+	<title>Customer Feedback Form</title>
+</head>
+<body bgcolor="powderblue">
+	
+	<form action="feedback.php"method="post">
+<h1 align="center">Customer Feedback</h1>
+<h3 align="center">please fill this form which takes no longer than 60 seconds.</h3>
+<table align="center" cellspacing="25" style="font-family: verdana; font-size: 15px; font-style: normal; font-weight: bold;  border-style: dotted;";>
+
+		<tr>
+		<td></td>
+		<td>Outstanding</td>
+		<td>Average</td>
+		<td>Good</td>
+	</tr>
+
+	<tr id ="services">
+		<td>Services:</td>
+		<td align="center">
+			<input type="radio" name="service" value="outstanding"></td>
+	<td align="center"><input name="service" type="radio" value="Average"></td>
+	<td align="center"><input  name="service" type="radio" value="Good"></td>
+</td>
+</tr>
+
+<tr id ="quality">
+		<td>Quality Of Food:</td>
+		<td align="center"><input  type="radio" name="qof" value="outstanding"></td>
+<td align="center"><input type="radio" name="qof" value="Average"></td>
+	<td align="center"><input type="radio" name="qof" value="Good"></td>
+</td>
+</tr>
+
+<tr id ="cleaniness">
+		<td>Cleanliness:</td>
+		<td align="center">
+			<input type="radio" name="clean" value="outstanding"></td>
+	<td align="center"><input  type="radio" name="clean"  value="Average"></td>
+	<td align="center"><input  type="radio" name="clean" value="Good"></td>
+</td>
+</tr>
+
+<tr id ="value_of_money">
+		<td>Value Of Money:</td>
+		<td align="center">
+			<input type="radio" name="vom" value="outstanding"></td>
+	<td align="center"><input type="radio"  name="vom" value="Average"></td>
+	<td align="center"><input type="radio"  name="vom" value="Good"></td>
+</td>
+</tr>
+
+<tr id ="response_time">
+		<td>Reponse Time:</td>
+		<td align="center">
+			<input type="radio" name="rt" value="outstanding"></td>
+	<td  align="center"><input name="rt" type="radio"  value="Average"></td>
+	<td  align="center"><input name="rt" type="radio" value="Good"></td>
+</td>
+</tr>
+<br>
+<tr>
+		<td  colspan="4" align="center"><h2>Would you like to celebrate</td>
+	</h2>
+	</tr>
+<tr>
+		<td></td>
+		<td></td>
+		<td>Yes</td>
+		<td>No</td>
+	</tr>
+
+
+<tr id ="birthday_party">
+		<td>Birthday Party:</td>
+		<td></td>
+		<td>
+			<input type="radio" name="bday" value="Yes"></td>
+	<td><input type="radio" name="bday" value="No"></td>
+</tr>
+</tr>
+
+<tr id ="wedding_anniversary">
+		<td>Wedding Anniversary:</td>
+		<td></td>
+		<td>
+			<input type="radio" name="wdany"  value="Yes"></td>
+	<td><input type="radio" name="wdany"   value="No"></td>
+</tr>
+
+<tr id ="other_party">
+		<td>Other Party:</td>
+		<td></td>
+		<td>
+			<input  type="radio" name="oparty" value="Yes"></td>
+	<td><input type="radio"name="oparty" value="No"></td>
+	
+</tr>
+
+<tr>
+	<td colspan="4" align="center"><button onclick="Submit()">Submit</button>
+	</td>
+</tr>
+
+<!--<br>
+<br>
+<tr>
+<td>Name :</td>
+<td><input type="text" name="firstname" maxlength="50" ></td>
+</tr>
+
+<tr>
+<td>Mobile No: </td>
+<td><input type="text" name="Mobile" size="30" maxlength="10"></td>
+</tr>
+<tr>
+<td>Email id: </td>
+<td><input type="Email" name="Email" ></td>
+</tr>-->
+
+</form>
+
+</table>
+</body>
+</html>

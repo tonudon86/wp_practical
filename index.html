@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>website</title>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+
+
+button{
+background-color:yellowgreen;
+height:100px;
+width:334px;
+font-weight:30px;
+
+}
+
+h1{
+color:black;
+font-size:30px;
+}
+.dropdown:hover .dropdown-content
+{
+display:block;
+}
+
+img{
+width:1350px;}
+</style>
+<link rel="stylesheet" href="non-veg.html">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.dropbtn {
+  background-color:yellowgreen;
+  color:purple;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:lightgreen;
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+<div class="dropdown">
+<button class="dropbtn"><h1><u>Menu</u></h1></button>
+<div class="dropdown-content">
+<a href="veg.html">Veg</a>
+<a href="nonveg.html">Non Veg</a>
+</div>
+</div>
+
+
+
+
+<button><h1><a href="about.html"><font color="black">About</a></button></h1>
+
+<button><h1><a href="contact.html"><font color="black">Contact</a></button></h1>
+<button><h1><a href="feedback.html"><font color="black">Feedback</a></button></h1><br><br>
+<img src="logo.png">
+<img src="front.jpg"><br><br>
+
+<img class="mySlides" src="slide1.jpg" style="width:100%">
+<img class="mySlides" src="slide2.jpg" style="width:100%">
+<img class="mySlides" src="slide3.jpg" style="width:100%">
+<img class="mySlides" src="slide4.jpg" style="width:100%">
+<img class="mySlides" src="slide5.jpg" style="width:100%">
+
+
+
+<footer>
+<h2 align="center">Delicious Junction</h2>
+
+
+<br bgcolor="blue">
+<font color="pink" align="center">
+<h3><b>Opening Hours</b></h3>
+<br>
+<div class="w3-row">
+<div class="w3-col s6">
+<p>Tuesday To Sunday</p>
+<p> 10.00 a.m. - 10.00 p.m.</p>
+<p><font color="yellow">Monday Closed</font></p>
+</div>
+</div></font color>
+ <hr width="100%" color="white"><br>
+
+<div class="footer-content">
+<h3>You can also order us on Swiggy And Zomato</h3>
+</div></footer>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+
+</body>
+</html>

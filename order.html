@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<title>Order form</title>
+<script type="text/javascript">
+
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value<10){
+        value++;
+            document.getElementById('number').value = value;
+    }
+}
+function decrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value>1){
+        value--;
+            document.getElementById('number').value = value;
+    }
+
+}
+
+function validate() {
+
+         if( document.myForm.first_name.value == "" ) {
+            alert( "Please provide your First name!" );
+            document.myForm.first_name.focus() ;
+            return false;
+         }
+
+ if( document.myForm.last_name.value == "" ) {
+            alert( "Please provide your Last name!" );
+            document.myForm.last_name.focus() ;
+            return false;
+         }
+
+ if( document.myForm.address.value == "" ) {
+            alert( "Please provide your Address!" );
+            document.myForm.address.focus() ;
+            return false;
+         }
+
+if( document.myForm.mobile.value == "" ) {
+            alert( "Please provide your Mobile No.!" );
+            document.myForm.mobile.focus() ;
+            return false;
+         }
+
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+  return( true );
+      }
+</script>
+
+
+</head>
+<center>
+<body style="background-color:plum;">
+<form method="post" name="myForm"action="order.php" onsubmit="return(validate());">
+<tablewidth="450px">
+<tr>
+<td>
+<label for="first_name">First Name</label>
+</td>
+<td>
+<input type="text" name="first_name" maxlength="50"size="30"><br><br>
+</td>
+</tr>
+<td>
+<tr>
+<label for="last_name">Last Name</label>
+</td>
+<td>
+<input type="text" name="last_name" maxlength="50"size="30"><br><br>
+</td>
+</tr>
+<tr>
+<td>
+<label for="address">Residential Address</label>
+</td>
+<td>
+<input type="text" name="address" maxlength="200"size="30"><br><br>
+</td>
+</tr>
+<td>
+<tr>
+<label for="mobile">Mobile Number</label>
+</td>
+<td>
+<input type="text" name="mobile" maxlenght="30"size="30"><br><br>
+</td>
+</tr>
+<td>
+<tr>
+<label for="email">Email Address</label>
+</td>
+<td>
+<input type="email" name="email" maxlength="80"size="30"><br><br>
+</td>
+</tr>
+<td>
+<tr>
+<label for="quantity">Quantity</label><br>
+</td>
+</tr>
+<div class="container">
+<input type="button" onclick="decrementValue()" value="-" />
+<input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+<input type="button" onclick="incrementValue()" value="+" />
+</div><br>
+
+
+<tr>
+<td colspan="2" style="text-align:center">
+<input type="submit"value="submit">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
