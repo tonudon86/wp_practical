@@ -5,6 +5,16 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
 
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('/Spinner-1s-200px.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}
+
 
 
 button{
@@ -74,8 +84,9 @@ width:1350px;}
 
 
 </head>
-<body>
-
+<body onload="myFunction()">
+  
+  <div id="loading"></div>
 
 
 <div class="dropdown">
@@ -93,6 +104,8 @@ width:1350px;}
 
 <button><h1><a href="contact.html"><font color="black">Contact</a></button></h1>
 <button><h1><a href="feedback.html"><font color="black">Feedback</a></button></h1><br><br>
+  <button><h1><a href="adminlogin.php"><font color="black">admin login
+  </a></button></h1><br><br>
 <img src="logo.png">
 <img src="front.jpg"><br><br>
 
@@ -124,7 +137,7 @@ width:1350px;}
 <div class="footer-content">
 <h3>You can also order us on Swiggy And Zomato</h3>
 </div></footer>
-
+<!-- <a href="adminlogin.php">admin login</a> -->
 
 <script>
 var myIndex = 0;
@@ -141,10 +154,20 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 3000);
 }
+
+		
+var preloader = document.getElementById("loading");
+
+function myFunction(){
+  preloader.style.display = 'none';
+};
 </script>
 
 
 
 
 </body>
+<script>
+
+</script>
 </html>
